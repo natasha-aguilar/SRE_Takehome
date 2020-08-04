@@ -20,15 +20,17 @@ stop checking other criteria and proceed with checking next input password until
 
 
 How to Use/Build Program locally
-------------------
+--------------------------------
 1) Download SRE_Takehome folder
-2) Make sure have Python 3.x on system, if not please Download
-3) On Windows, open Command prompt navigate inside SRE_Takehome and execute the following:
--> python password_validator.py weak_passwords_file < input_passwords_file
+2) On Windows, make sure to have Python 3.x installed or the following steps will not work.
+ -> Open Command prompt navigate inside SRE_Takehome and execute the following:
+ -> python password_validator.py weak_passwords_file < input_passwords_file
 
-On linux/unix, open terminal and navigate inside SRE_Takehome and execute the following:
+On Linux/Unix, open terminal and navigate inside SRE_Takehome and execute the following:
+-> chmod +x password_validator.py (makes password_validator executable)
 -> cat input_passwords_file | ./password_validator.py weak_passwords_file
 
 4) Program will display passwords that DO NOT meet criteria above, will not display passwords that do meet criteria 
 
 To run tests on Windows/Linux/Unix execute the following: python test.py
+
