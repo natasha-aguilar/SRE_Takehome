@@ -8,7 +8,7 @@ check_char_max_len = target.check_char_max_len
 check_is_ascii = target.check_is_ascii
 check_is_common_pwd = target.check_is_common_pwd
 
-class TestPasswordMin(unittest.TestCase):
+class TestPasswordCriteria(unittest.TestCase):
     def test_pwd_below_min(self):
         """
         Test that input password is below 8 character min
